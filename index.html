@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet"/>
+</head>
+<body>
+  <section>
+    <div class="container">
+      <div class="form-container">
+        <div class="header">
+          <img src="logo.jpg" alt="logo" />
+          <p>Create your Google Account</p>
+        </div>
+
+        <form action="#">
+          <div class="form-first">
+            <div class="input-group">
+              <input type="text" name="text" id="firstname" class="input-area" required />
+              <label for="firstname" class="label">First name</label>
+            </div>
+
+            <div class="input-group">
+              <input type="text" name="text" id="lastname" class="input-area" required />
+              <label for="lastname" class="label">Last name</label>
+            </div>
+          </div>
+
+          <div class="form-second">
+            <div class="input-group">
+              <input type="email" name="text" id="username" class="input-area" required />
+              <label for="username" class="label">Username</label>
+
+              <span class="username-text">@gmail.com</span>
+            </div>
+
+            <p class="username-suggestion">
+              You can use letters, numbers & periods
+            </p>
+            <p class="username-current">
+              Use my current email address instead
+            </p>
+          </div>
+
+          <div class="form-third">
+            <div class="password-dot">
+              <div class="input-group">
+                <input type="password" name="text" id="password" class="input-area" required />
+                <label for="password" class="label">Password</label>
+              </div>
+
+              <div class="input-group">
+                <input type="password" name="text" id="confirm" class="input-area" required />
+                <label for="confirm" class="label">Confirm</label>
+              </div>
+              <img src="eye.PNG" />
+            </div>
+
+            <p class="username-suggestion">
+              Use 8 or more characters with a mix of letters, numbers & symbols
+            </p>
+          </div>
+
+          <span class="signin">Sign in instead</span>
+          <input type="submit" value="Next" class="button" onclick="validation()" />
+        </form>
+      </div>
+      <div class="side-img">
+        <img src="side.png" alt="side image" />
+      </div>
+    </div>
+  </section>
+</body>
+
+</html>
